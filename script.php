@@ -1,13 +1,13 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
+require 'vendor/autoload.php';
 
 use App\CommissionCalculator;
 use App\ExchangeRateProvider;
 use App\Operation;
 use App\User;
 
-// Load exchange rates (hardcoded for simplicity)
+// Load exchange rates (example rates, replace with real data)
 $exchangeRates = [
     'USD' => 1.1497,
     'JPY' => 129.53

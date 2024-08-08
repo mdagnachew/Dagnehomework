@@ -13,6 +13,6 @@ class ExchangeRateProvider
 
     public function getRate(string $currency): float
     {
-        return $this->rates[$currency] ?? 1.0;
+        return isset($this->rates[$currency]) ? $this->rates[$currency] : 1.0;
     }
 }
